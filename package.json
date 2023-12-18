@@ -14,5 +14,13 @@
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
+    },
+    "dependencies": {
+        "@vitejs/plugin-vue": "^4.5.2",
+        "vue": "^3.2.36",
+        "vue-axios": "^3.5.2",
+        "vue-loader": "^17.3.1",
+        "vue-router": "^4.2.5",
+        "vue-template-compiler": "^2.7.15"
     }
 }
