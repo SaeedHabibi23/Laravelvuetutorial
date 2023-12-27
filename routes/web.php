@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TagController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('{any}' , function(){
+
+
+Route::any('{slug}', function(){
+    return view('welcome');
+});
+
+
+Route::get('/' , function(){
     return view('app');
-})->where('any' , '.*');
+});
+
+Route::post('app/created_tag',[TagController::class , 'savetag']);
